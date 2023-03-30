@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="Screenshot.png" alt="logo" width="640"  height="auto" />
   <br/>
 
 </div>
@@ -55,11 +55,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 To-Do-list <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**To-do list** is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. That project is a simple website that allows for doing that, Built using ES6 and Webpack!
 
 ## 🛠 Built With <a name="built-with"></a>
 
