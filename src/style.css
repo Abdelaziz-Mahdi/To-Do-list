@@ -1,7 +1,87 @@
-body {
-    background-color: bisque;
+* {
+  list-style: none;
+  border: none;
+  padding-inline-start: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.hello{
-    color: rebeccapurple;
+body {
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: white;
+  border: 1px ghostwhite;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 2px 2px 2px #888888;
+  width: 85%;
+  height: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.adjust-span {
+  display: grid;
+  grid-template-columns: 94% 2%;
+  gap: 1.5%;
+  align-items: center;
+  padding: 1%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form li {
+  display: grid;
+  grid-template-columns: 4% 90% 4%;
+  gap: 1%;
+  align-items: center;
+}
+
+span,
+li input {
+  justify-self: center;
+}
+
+form li,
+form p,
+form span,
+form input {
+  padding: 10px;
+}
+
+form li,
+form div {
+  border-bottom: 1px solid gray;
+}
+
+span,
+#remove {
+  color: gray;
+}
+
+#remove {
+  padding: 2%;
+  justify-self: end;
+}
+
+label {
+  display: none;
+}
+
+textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: justify;
+  height: 50%;
 }
