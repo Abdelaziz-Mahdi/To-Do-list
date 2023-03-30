@@ -22,7 +22,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)  
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -77,8 +77,8 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [In the future is going to be deployed. 
-]()
+- In the future is going to be deployed. 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
