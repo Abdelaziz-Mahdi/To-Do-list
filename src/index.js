@@ -3,17 +3,17 @@ import './style.css';
 const arr = [
   {
     description: 'Study JS',
-    completed: 'false',
+    completed: false,
     index: 1,
   },
   {
     description: 'Study HTML',
-    completed: 'false',
+    completed: false,
     index: 2,
   },
   {
     description: 'Study CSS',
-    completed: 'false',
+    completed: false,
     index: 3,
   },
 ];
