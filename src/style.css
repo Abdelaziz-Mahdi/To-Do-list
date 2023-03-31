@@ -46,6 +46,19 @@ form li {
   align-items: center;
 }
 
+#addInput {
+  padding-left: 2%;
+}
+
+#addbtn {
+  visibility: hidden;
+  padding-right: 0;
+}
+
+#addbtn span {
+  visibility: visible;
+}
+
 span,
 li input {
   justify-self: center;
@@ -56,10 +69,12 @@ span,
   color: gray;
 }
 
+.form input {
+  padding: 10px 10px 10px 0;
+}
+
 form li,
-form p,
-form span,
-form input {
+form p {
   padding: 10px;
 }
 
@@ -84,5 +99,14 @@ textarea {
   justify-items: center;
   align-items: center;
   text-align: justify;
-  height: 50%;
+  height: 65%;
+  width: 100%;
+}
+
+.inputT {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  resize: none;
+  outline: none;
 }
