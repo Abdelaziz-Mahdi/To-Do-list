@@ -1,10 +1,11 @@
 import './style.css';
 
-export var arr = [];
-export const container = document.getElementById('tasks-list');
+const container = document.getElementById('tasks-list');
 const addInput = document.getElementById('addInput');
 const addBtn = document.getElementById('addbtn');
-export var arrayIndex = 0;
+
+export let arr = [];
+export let arrayIndex = 0;
 
 export function removeAllTasks(parent) {
   while (parent.firstChild) {
