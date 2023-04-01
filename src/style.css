@@ -46,6 +46,15 @@ form li {
   align-items: center;
 }
 
+#addInput {
+  padding-left: 2%;
+}
+
+#addbtn {
+  visibility: hidden;
+  padding-right: 0;
+}
+
 span,
 li input {
   justify-self: center;
@@ -56,16 +65,30 @@ span,
   color: gray;
 }
 
+#addbtn span {
+  visibility: visible;
+}
+
+.delete-ic {
+  display: none;
+}
+
+.form input {
+  padding: 10px 10px 10px 0;
+}
+
 form li,
-form p,
-form span,
-form input {
+form p {
   padding: 10px;
 }
 
 form li,
 form div {
   border-bottom: 1px solid gray;
+}
+
+li button {
+  background-color: transparent;
 }
 
 #remove {
@@ -84,5 +107,14 @@ textarea {
   justify-items: center;
   align-items: center;
   text-align: justify;
-  height: 50%;
+  height: 65%;
+  width: 100%;
+}
+
+.inputT {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  resize: none;
+  outline: none;
 }

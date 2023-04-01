@@ -22,7 +22,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#deployment)  
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -76,9 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- In the future is going to be deployed. 
-
+- In the future is going to be deployed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +90,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
--IDE for example Visual Code or Atom. 
+-IDE for example Visual Code or Atom.
 
 ### Setup
 
@@ -110,17 +108,17 @@ Install this project with:
 
 To run the project:
 
--open de index.html in youre browser. Mozilla Firefox recomended. 
+-open de index.html in youre browser. Mozilla Firefox recomended.
 
 ### Run tests
 
 To run tests:
 
--You can use linters to run test for this project. 
+-You can use linters to run test for this project.
 
 ### Deployment
 
-You can deploy this project using tools as Parcel. 
+You can deploy this project using tools as Parcel.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,9 +138,7 @@ You can deploy this project using tools as Parcel.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Sections created dinamically by js**
 - [ ] **Interactive list**
-- [ ] **Add and remove items**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +156,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Templete used in project provided by (Microverse)! 
+Templete used in project provided by (Microverse)!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
