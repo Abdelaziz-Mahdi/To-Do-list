@@ -6,7 +6,8 @@ const container = document.getElementById('tasks-list');
 const addInput = document.getElementById('addInput');
 const addBtn = document.getElementById('addbtn');
 
-export let arr = [];
+let arr = [];
+export { arr as default };
 export let arrayIndex = 0;
 
 function saveToLocalStorage() {
@@ -57,7 +58,7 @@ export function component() {
     });
     element.querySelector('#removeTask').addEventListener('click', async () => {
       arrayIndex = `${card.index}` - 1;
-      const { deletingTask } = await import('./delete.js');
+      const { deletingTask } = await import('./interactions.js');
       deletingTask();
       element.querySelector('.ic-vDots').style.display = 'none';
     });
