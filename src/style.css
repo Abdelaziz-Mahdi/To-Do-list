@@ -55,14 +55,6 @@ form li {
   padding-right: 0;
 }
 
-#addbtn span {
-  visibility: visible;
-}
-
-.delete-ic {
-  display: none;
-}
-
 span,
 li input {
   justify-self: center;
@@ -71,6 +63,14 @@ li input {
 span,
 #remove {
   color: gray;
+}
+
+#addbtn span {
+  visibility: visible;
+}
+
+.delete-ic {
+  display: none;
 }
 
 .form input {
