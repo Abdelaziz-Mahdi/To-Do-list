@@ -3,6 +3,8 @@
 
 import './style.css';
 
+import defaultExport from './status.js';
+
 const container = document.getElementById('tasks-list');
 const addInput = document.getElementById('addInput');
 const addBtn = document.getElementById('addbtn');
@@ -32,8 +34,7 @@ addInput.addEventListener('keypress', (event) => {
 clearAll.addEventListener('click', async () => {
   const removeCompleted = arr.filter((arr) => arr.completed === false);
   arr = removeCompleted;
-  const { clearAllComp } = await import('./status');
-  clearAllComp();
+  defaultExport();
 });
 
 export function component() {
