@@ -1,3 +1,5 @@
+/* eslint-disable import/no-mutable-exports */
+
 import './style.css';
 
 const container = document.getElementById('tasks-list');
