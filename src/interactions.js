@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import defaultExport from './index.js';
 
 const container = document.getElementById('tasks-list');
@@ -7,7 +8,6 @@ function saveToLocalStorage() {
 }
 
 export function addNew() {
-  console.log(defaultExport);
   const description = document.getElementById('addInput').value;
   const properIndex = defaultExport.length + 1;
   if (description) {
