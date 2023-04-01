@@ -1,4 +1,4 @@
-export const arr = [];
+export let arr = [];
 export let container = document.getElementById('tasks-list');
 const addInput = document.getElementById('addInput');
 const addBtn = document.getElementById('addbtn');
@@ -32,7 +32,7 @@ export function component() {
     element.innerHTML += `
       <input type="checkbox" name="task${card.index}">
       <label for="task${card.index}">${card.description}</label>
-      <textarea  id="task${card.index}" name="inputT" class="inputT">${card.description}</textarea>
+      <textarea  id="task${n}" name="inputT" class="inputT">${card.description}</textarea>
       <button type="button" id="removeTask">
       <span id='delete-${n}' class="material-symbols-outlined  delete-ic">delete</span>
       <span class="material-symbols-outlined ic-vDots">more_vert</span>
@@ -40,7 +40,6 @@ export function component() {
     `;
     element.addEventListener('mouseenter', () => {
       const deleteIC = document.getElementById(`delete-${n}`);
-      console.log(deleteIC);
       if (deleteIC) {
         deleteIC.style.display = 'block';
       }
@@ -49,7 +48,6 @@ export function component() {
     });
     element.addEventListener('focusout', () => {
       const deleteIC = document.getElementById(`delete-${n}`);
-      console.log(deleteIC);
       if (deleteIC) {
         deleteIC.style.display = 'none';
       }
@@ -61,13 +59,24 @@ export function component() {
       deletingTask();
       element.querySelector('.ic-vDots').style.display = 'none';
     });
+    let z = element.querySelector('.inputT');
+    z.addEventListener('keypress', (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        arr[n].description = z.value;
+        editingTask();
+      }
+    });
     container.appendChild(element);
   });
 }
 
 window.onload = () => {
+  if (localStorage.getItem('arr')) {
+    arr = JSON.parse(localStorage.getItem('arr'));
+  }
   component();
 };
 import './style.css';
 
-import { addNew, deletingTask } from './interactions';
+import { addNew, deletingTask, editingTask } from './interactions';

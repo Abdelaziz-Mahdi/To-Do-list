@@ -10,6 +10,7 @@ export function addNew() {
       index: properIndex,
     };
     arr.push(task);
+    saveToLocalStorage();
   }
 }
 
@@ -18,7 +19,17 @@ export function deletingTask() {
   arr.forEach((element, index) => {
     element.index = index + 1;
   });
-  console.log(arr);
+  saveToLocalStorage();
   removeAllTasks(container);
   component();
+}
+
+export function editingTask() {
+  saveToLocalStorage();
+  removeAllTasks(container);
+  component();
+}
+
+export function saveToLocalStorage() {
+  localStorage.setItem('arr', JSON.stringify(arr));
 }
