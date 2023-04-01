@@ -1,4 +1,5 @@
 /* eslint-disable import/no-mutable-exports */
+/* eslint-disable import/no-cycle */
 
 import './style.css';
 
