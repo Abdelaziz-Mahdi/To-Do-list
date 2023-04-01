@@ -1,4 +1,4 @@
-import { arr } from './index';
+import { arr, arrayIndex, component, container, removeAllTasks } from './index';
 
 export function addNew() {
   const description = document.getElementById('addInput').value;
@@ -10,10 +10,15 @@ export function addNew() {
       index: properIndex,
     };
     arr.push(task);
-  } else {
   }
 }
 
-function deletingTask() {}
-
-function editingTask() {}
+export function deletingTask() {
+  arr.splice(arrayIndex, 1);
+  arr.forEach((element, index) => {
+    element.index = index + 1;
+  });
+  console.log(arr);
+  removeAllTasks(container);
+  component();
+}

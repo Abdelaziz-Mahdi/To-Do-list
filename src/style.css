@@ -59,6 +59,10 @@ form li {
   visibility: visible;
 }
 
+.delete-ic {
+  display: none;
+}
+
 span,
 li input {
   justify-self: center;
@@ -81,6 +85,10 @@ form p {
 form li,
 form div {
   border-bottom: 1px solid gray;
+}
+
+li button {
+  background-color: transparent;
 }
 
 #remove {
