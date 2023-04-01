@@ -1,4 +1,14 @@
-import { arr, arrayIndex, component, container, removeAllTasks } from './index';
+import {
+  arr,
+  arrayIndex,
+  component,
+  container,
+  removeAllTasks,
+} from './index.js';
+
+export function saveToLocalStorage() {
+  localStorage.setItem('arr', JSON.stringify(arr));
+}
 
 export function addNew() {
   const description = document.getElementById('addInput').value;
@@ -28,8 +38,4 @@ export function editingTask() {
   saveToLocalStorage();
   removeAllTasks(container);
   component();
-}
-
-export function saveToLocalStorage() {
-  localStorage.setItem('arr', JSON.stringify(arr));
 }

@@ -1,25 +1,16 @@
 import './style.css';
 
-import { addNew, deletingTask, editingTask } from './interactions';
-export let arr = [];
+export var arr = [];
 export const container = document.getElementById('tasks-list');
 const addInput = document.getElementById('addInput');
 const addBtn = document.getElementById('addbtn');
-export let arrayIndex = 0;
+export var arrayIndex = 0;
 
 export function removeAllTasks(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
 }
-
-addBtn.addEventListener('click', () => {
-  addNew();
-  removeAllTasks(container);
-  component();
-  document.getElementById('addInput').placeholder = 'Add to your list...';
-  document.getElementById('addInput').value = '';
-});
 
 addInput.addEventListener('keypress', (event) => {
   if (event.key === 'Enter') {
@@ -57,22 +48,33 @@ export function component() {
       element.querySelector('.ic-vDots').style.display = 'block';
       element.style.backgroundColor = 'white';
     });
-    element.querySelector('#removeTask').addEventListener('click', () => {
+    element.querySelector('#removeTask').addEventListener('click', async () => {
       arrayIndex = `${card.index}` - 1;
+      const { deletingTask } = await import('./interactions.js');
       deletingTask();
       element.querySelector('.ic-vDots').style.display = 'none';
     });
     const z = element.querySelector('.inputT');
-    z.addEventListener('keypress', (event) => {
+    z.addEventListener('keypress', async (event) => {
       if (event.key === 'Enter') {
         event.preventDefault();
         arr[n].description = z.value;
+        const { editingTask } = await import('./interactions.js');
         editingTask();
       }
     });
     container.appendChild(element);
   });
 }
+
+addBtn.addEventListener('click', async () => {
+  const { addNew } = await import('./interactions.js');
+  addNew();
+  removeAllTasks(container);
+  component();
+  document.getElementById('addInput').placeholder = 'Add to your list...';
+  document.getElementById('addInput').value = '';
+});
 
 window.onload = () => {
   if (localStorage.getItem('arr')) {
