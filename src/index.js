@@ -9,6 +9,10 @@ const addBtn = document.getElementById('addbtn');
 export let arr = [];
 export let arrayIndex = 0;
 
+function saveToLocalStorage() {
+  localStorage.setItem('arr', JSON.stringify(arr));
+}
+
 export function removeAllTasks(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
@@ -53,7 +57,7 @@ export function component() {
     });
     element.querySelector('#removeTask').addEventListener('click', async () => {
       arrayIndex = `${card.index}` - 1;
-      const { deletingTask } = await import('./interactions.js');
+      const { deletingTask } = await import('./delete.js');
       deletingTask();
       element.querySelector('.ic-vDots').style.display = 'none';
     });
@@ -62,8 +66,9 @@ export function component() {
       if (event.key === 'Enter') {
         event.preventDefault();
         arr[n].description = z.value;
-        const { editingTask } = await import('./interactions.js');
-        editingTask();
+        saveToLocalStorage();
+        removeAllTasks(container);
+        component();
       }
     });
     container.appendChild(element);

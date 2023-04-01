@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_template=self.webpackChunkwebpack_template||[]).push([[920],{920:(e,t,a)=>{a.r(t),a.d(t,{addNew:()=>n});var r=a(987);function n(){const e=document.getElementById("addInput").value,t=r.arr.length+1;if(e){const a={description:e,completed:!1,index:t};r.arr.push(a),localStorage.setItem("arr",JSON.stringify(r.arr))}}}}]);
