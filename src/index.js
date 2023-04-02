@@ -60,6 +60,8 @@ export function component() {
           } else {
             arr[n].completed = false;
           }
+          saveToLocalStorage();
+          console.log(arr);
         });
 
       element.addEventListener('mouseenter', () => {
