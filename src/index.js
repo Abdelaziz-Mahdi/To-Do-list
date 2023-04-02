@@ -54,7 +54,12 @@ export function component() {
       element
         .querySelector(`#check${n}`)
         .addEventListener('click', async () => {
-          arr[n].completed = element.querySelector(`#check${n}`).checked;
+          const sta = element.querySelector(`#check${n}`).checked;
+          if (sta) {
+            arr[n].completed = true;
+          } else {
+            arr[n].completed = false;
+          }
         });
 
       element.addEventListener('mouseenter', () => {
