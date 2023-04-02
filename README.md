@@ -138,7 +138,7 @@ You can deploy this project using tools as Parcel.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Interactive list**
+- [ ] **Improve GUI**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
