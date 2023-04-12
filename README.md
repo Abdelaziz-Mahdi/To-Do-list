@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- In the future is going to be deployed.
+- Live Demo >> [To-Do list](https://abdelaziz-ali.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
